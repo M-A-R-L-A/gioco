@@ -23,6 +23,8 @@ public class Personaggio {
         this.def = def;
         this.range = range;
         this.pos = pos;
+        
+        
     }
     
     private boolean isVivo(int puntiVita){
@@ -34,7 +36,7 @@ public class Personaggio {
         return vivo;
     }
     
-    public int attacco(Personaggio nemico){
+    public String attacco(Personaggio nemico){
         String txt;
         int danno= atk*3-def*2;
         if(danno<1){
@@ -52,10 +54,12 @@ public class Personaggio {
             
            
         }
+        return txt;
     }
     
     public String attacco(Arma arma,Personaggio nemico){
         String txt;
+        arma.range;
         int danno= atk*3-def*2;
         if(danno<1){
             txt="hai mancato il colpo";

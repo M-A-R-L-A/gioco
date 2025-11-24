@@ -11,6 +11,12 @@ package prj.Gioco;
 public class Arma {
     private double range;
     private int atk;
+
+    public Arma(double range, int atk) {
+        this.range = range;
+        this.atk = atk;
+    }
+    
     
     
 }
